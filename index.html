@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/georgie.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skating Polly Platformer Game</title>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--CSS-->
+    <style>
+      .play-regular {
+        font-family: "Play", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      .press-start-2p-regular {
+        font-family: "Press Start 2P", system-ui;
+        font-weight: 400;
+        font-style: normal;
+      }
+      body {
+        background-color: #000033 !important;
+        margin: 0;
+      }
+      main {
+        flex: 1;
+        display: grid;
+        place-items: center;
+      }
+      .navbar {
+        display: flex;
+        justify-content: left;
+        align-items: start;
+        background: rgb(0, 0, 51);
+        font-family: "Play", system-ui;
+        z-index: 2;
+      }
+      .navbar a {
+        color: white;
+      }
+      .stage-grid {
+        margin-left: 20px;
+        justify-self: start;
+        display: flex;
+        gap: 30px;
+      }
+      #app {
+        place-items: center;
+      }
+      .instructions {
+        font-size: 15px;
+        color: #ffffff6e;
+      }
+      .instructions p {
+        margin-top: 10px;
+        font-family: "Press Start 2P", system-ui;
+      }
+    </style>
+    <!--Bootstrap-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <a
+        class="navbar-brand"
+        href="https://www.peytonbighorse.com/"
+        title="Homepage"
+        >Peyton Bighorse</a
+      >
+      <button
+        class="navbar-toggler navbar-dark"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a
+            class="nav-link"
+            href="https://www.peytonbighorse.com/"
+            title="Homepage"
+            >Home <span class="sr-only">(current)</span></a
+          >
+          <a
+            class="nav-link active"
+            href="https://www.peytonbighorse.com/about"
+            title="About"
+            >About</a
+          >
+          <a
+            class="nav-link"
+            href="https://www.peytonbighorse.com/ccl-platformer/"
+            title="CCL Platformer"
+            target="_blank"
+            >Chaos County Line Game</a
+          >
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="stage-grid">
+        <div class="instructions">
+          <p>P : Pause game</p>
+          <p>Q : Quit game</p>
+          <p>M : Mute SFX</p>
+          <p>
+            <span style="font-family: impact; font-size: 20px; font-weight: 900"
+              >←</span
+            >
+            : Move left
+          </p>
+          <p>
+            <span style="font-family: impact; font-size: 20px; font-weight: 900"
+              >→</span
+            >
+            : Move right
+          </p>
+          <p>↑ : Jump</p>
+        </div>
+        <div id="app"></div>
+      </div>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <!--Bootstrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
